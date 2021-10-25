@@ -1,9 +1,17 @@
-<!-- <div class="card mb-2" style="width: 18rem;" *ngIf="toDoItem"> -->
+<div class="card mb-2 " *ngIf="toDoItem">
 
-  <div class="card mb-2"  *ngIf="toDoItem">
-  <div class="card-header text-right">
-    Status: {{toDoItem.status}}
-    <input type="checkbox" name="done" id="done">
+  <!-- <div class="card mb-2"  *ngIf="toDoItem"> -->
+  <div class="card-header text-right {{toDoItem.status}}">
+    <div class="row">
+    <p class="col-10">Status: {{toDoItem.status}}</p>
+
+    <div *ngIf="toDoItem.status  == 'done'" class="col-1">
+      <input type="checkbox" name="done" id="done" checked>
+    </div>
+    <div *ngIf="toDoItem.status  == 'todo'" class="col-1">
+      <input type="checkbox" name="done" id="done">
+    </div>
+  </div>
   </div>
   <div class="card-body">
     <h5 class="card-title text-right">Due to: {{toDoItem.date}}</h5>

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ToDoItemService } from '../to-do-item.service';
 import { ToDoItem } from '../toDoItem';
+import { ToDoList } from '../toDoList';
 
 @Component({
   selector: 'app-to-do-list',
@@ -8,6 +9,7 @@ import { ToDoItem } from '../toDoItem';
   styleUrls: ['./to-do-list.component.scss']
 })
 export class ToDoListComponent implements OnInit {
+  @Input() toDoList: ToDoList = {  id: 0,  title: '',  category: ''}
 
   toDoItems: ToDoItem[] = [];
 
