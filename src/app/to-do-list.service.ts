@@ -12,20 +12,20 @@ export class ToDoListService {
 
     let toDoList1: ToDoList = {
       id: 1,
-      title: "--- titel 1 ---",
-      category: "category",
+      title: "---titel-1---",
+      category: "blue",
     };
 
     let toDoList2: ToDoList = {
       id: 2,
-      title: "--- titel 2 ---",
-      category: "category",
+      title: "---titel-2---",
+      category: "purple",
     };
 
     let toDoList3: ToDoList = {
       id: 3,
-      title: "--- titel 3 ---",
-      category: "category",
+      title: "---titel-3---",
+      category: "pink",
     };
 
     toDoLists.push(toDoList1);

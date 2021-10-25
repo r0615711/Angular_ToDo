@@ -40,7 +40,7 @@ export class ToDoItemService {
 
     let toDoItem4: ToDoItem = {
       id: 4,
-      list_id: 4,
+      list_id: 1,
       description: "Lorem ipsum dolor ...",
       date: "30/11/2020",
       status: "done",
@@ -49,7 +49,7 @@ export class ToDoItemService {
 
     let toDoItem5: ToDoItem = {
       id: 5,
-      list_id: 5,
+      list_id: 2,
       description: "Lorem ipsum dolor ...",
       date: "31/11/2020",
       status: "done",
