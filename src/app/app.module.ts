@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    HttpClientModule
 
   ],
   providers: [],

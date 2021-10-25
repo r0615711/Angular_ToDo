@@ -7,7 +7,7 @@ import { ToDoItem } from '../toDoItem';
   styleUrls: ['./to-do-item.component.scss']
 })
 export class ToDoItemComponent implements OnInit {
-@Input() toDoItem: ToDoItem = {id: 0, list_id: 0, description: "", date: "", status: "", order: 0}
+@Input() toDoItem: ToDoItem = { id: 0, listId: 0, title: '', description: '', date: '', status: '', statusId: 0, order: 0 }
 
   constructor() { }
 

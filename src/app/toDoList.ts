@@ -1,5 +1,7 @@
 export interface ToDoList {
   id: number;
-  title: string;
-  category: string;
+  name: string;
+  color: string;
+  textcolor: string;
+
 }
