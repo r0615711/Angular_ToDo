@@ -1,8 +1,10 @@
 export interface ToDoItem {
   id: number;
-  list_id: number;
+  listId: number;
+  title: string;
   description: string;
   date: string;
   status: string;
+  statusId: number,
   order: number;
 }

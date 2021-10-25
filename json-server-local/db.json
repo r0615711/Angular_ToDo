@@ -1,0 +1,84 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "category-1",
+      "color": "#afdeee",
+      "textcolor": "#000000"
+    },
+    {
+      "id": 2,
+      "name": "category-2",
+      "color": "#eab48d",
+      "textcolor": "#000000"
+    },
+    {
+      "id": 1,
+      "name": "category-3",
+      "color": "#afdeee",
+      "textcolor": "#000000"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "listId": 1,
+      "title": "Cisco assignment",
+      "description": "Chapter test 2",
+      "date": "2021-10-30T22:00:00.000Z",
+      "status": "done",
+      "statusId": 1,
+      "order": 1
+    },
+    {
+      "id": 2,
+      "listId": 2,
+      "title": "Cleaning",
+      "description": "The windows need some cleaning",
+      "date": "2021-10-26T22:00:00.000Z",
+      "status": "todo",
+      "statusId": 1,
+      "order": 1
+    },
+    {
+      "id": 3,
+      "listId": 3,
+      "title": "Mobile Development",
+      "description": "Deadline to upload project description and team",
+      "date": "2021-10-24T22:00:00.000Z",
+      "status": "todo",
+      "statusId": 1,
+      "order": 2
+    },
+    {
+      "id": 4,
+      "listId": 1,
+      "title": "Cleaning",
+      "description": "The windows need some cleaning",
+      "date": "2021-10-26T22:00:00.000Z",
+      "status": "todo",
+      "statusId": 1,
+      "order": 1
+    },
+    {
+      "id": 5,
+      "listId": 2,
+      "title": "Cleaning",
+      "description": "The windows need some cleaning",
+      "date": "2021-10-26T22:00:00.000Z",
+      "status": "todo",
+      "statusId": 1,
+      "order": 1
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "name": "todo"
+    },
+    {
+      "id": 2,
+      "name": "done"
+    }
+  ]
+}
