@@ -20,6 +20,10 @@ export class ToDoItemService {
     return this.httpClient.get<ToDoItem>("http://localhost:3000/items/" + id);
   }
 
+  getToDoItemsBylistId(id: number): Observable<ToDoItem[]> {
+    return this.httpClient.get<ToDoItem[]>("http://localhost:3000/items/?listId=" + id);
+  }
+
   // getToDoItems(): ToDoItem[] {
   //   let toDoItems: ToDoItem[] = [];
 
