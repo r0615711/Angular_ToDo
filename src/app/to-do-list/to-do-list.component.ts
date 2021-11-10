@@ -19,12 +19,16 @@ export class ToDoListComponent implements OnInit {
 
   toDoItems: ToDoItem[] = [];
   toDoItems$: Observable<ToDoItem[]> = new Observable<ToDoItem[]>();
+  itemColor: string = "";
 
   constructor(private toDoItemService: ToDoItemService) { }
 
   ngOnInit(): void {
-    this.toDoItems$ = this.toDoItemService.getToDoItems();
+    // this.toDoItems$ = this.toDoItemService.getToDoItems();
+    // this.toDoItems$ = this.toDoItemService.getToDoItemsBylistId(3);
+    this.toDoItems$ = this.toDoItemService.getToDoItemsBylistId(this.toDoList.id);
     // this.toDoItemService.getToDoItems().subscribe(result => this.article = result);
+    this.itemColor = this.toDoList.color;
   }
 
 }

@@ -22,8 +22,9 @@ export class HomeComponent implements OnInit {
   constructor(private toDoItemService: ToDoItemService, private toDoListService: ToDoListService) { }
 
   ngOnInit(): void {
-    this.toDoItems$ = this.toDoItemService.getToDoItems();
+
     this.toDoLists$ = this.toDoListService.getToDoLists();
+    // this.toDoItems$ = this.toDoItemService.getToDoItemsBylistId(1);
   }
 
 }

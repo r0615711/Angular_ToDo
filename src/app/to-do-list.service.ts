@@ -20,6 +20,10 @@ export class ToDoListService {
     return this.httpClient.get<ToDoList>("http://localhost:3000/lists/" + id);
   }
 
+  getToDoListsEmbedItems(): Observable<ToDoList[]> {
+    return this.httpClient.get<ToDoList[]>("http://localhost:3000/lists?_embed=items");
+  }
+
   // getToDoLists(): ToDoList[] {
   //   let toDoLists: ToDoList[] = [];
 

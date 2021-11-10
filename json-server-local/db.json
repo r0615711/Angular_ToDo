@@ -3,19 +3,19 @@
     {
       "id": 1,
       "name": "category-1",
-      "color": "#afdeee",
+      "color": "pink",
       "textcolor": "#000000"
     },
     {
       "id": 2,
       "name": "category-2",
-      "color": "#eab48d",
+      "color": "purple",
       "textcolor": "#000000"
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "category-3",
-      "color": "#afdeee",
+      "color": "blue",
       "textcolor": "#000000"
     }
   ],
@@ -27,7 +27,7 @@
       "description": "Chapter test 2",
       "date": "2021-10-30T22:00:00.000Z",
       "status": "done",
-      "statusId": 1,
+      "statusId": 2,
       "order": 1
     },
     {
@@ -38,7 +38,7 @@
       "date": "2021-10-26T22:00:00.000Z",
       "status": "todo",
       "statusId": 1,
-      "order": 1
+      "order": 3
     },
     {
       "id": 3,
@@ -48,23 +48,33 @@
       "date": "2021-10-24T22:00:00.000Z",
       "status": "todo",
       "statusId": 1,
-      "order": 2
+      "order": 1
     },
     {
       "id": 4,
       "listId": 1,
       "title": "Cleaning",
-      "description": "The windows need some cleaning",
+      "description": "The windows",
       "date": "2021-10-26T22:00:00.000Z",
       "status": "todo",
       "statusId": 1,
-      "order": 1
+      "order": 2
     },
     {
       "id": 5,
       "listId": 2,
       "title": "Cleaning",
-      "description": "The windows need some cleaning",
+      "description": "cleaning",
+      "date": "2021-10-26T22:00:00.000Z",
+      "status": "todo",
+      "statusId": 1,
+      "order": 2
+    },
+    {
+      "id": 6,
+      "listId": 2,
+      "title": "Cleaning",
+      "description": "The windows",
       "date": "2021-10-26T22:00:00.000Z",
       "status": "todo",
       "statusId": 1,

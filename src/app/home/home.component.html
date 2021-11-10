@@ -2,5 +2,5 @@
 <h1>Welcome To ToDo</h1>
 <!-- <app-to-do-item *ngFor="let toDoItem of toDoItems" [toDoItem]="toDoItem" ></app-to-do-item> -->
 <div class="row  justify-content-center">
-<app-to-do-list *ngFor="let toDoList of (toDoLists$ | async)" [toDoList]="toDoList" ></app-to-do-list>
+<app-to-do-list *ngFor="let toDoList of (toDoLists$ | async)" [toDoList]="toDoList" class="category"></app-to-do-list>
 </div>
