@@ -38,7 +38,7 @@
       "date": "2021-10-26T22:00:00.000Z",
       "status": "todo",
       "statusId": 1,
-      "order": 1
+      "order": 3
     },
     {
       "id": 3,
@@ -69,6 +69,16 @@
       "status": "todo",
       "statusId": 1,
       "order": 2
+    },
+    {
+      "id": 6,
+      "listId": 2,
+      "title": "Cleaning",
+      "description": "The windows",
+      "date": "2021-10-26T22:00:00.000Z",
+      "status": "todo",
+      "statusId": 1,
+      "order": 1
     }
   ],
   "statuses": [

@@ -20,8 +20,20 @@ export class ToDoItemService {
     return this.httpClient.get<ToDoItem>("http://localhost:3000/items/" + id);
   }
 
+  // getToDoItemsBylistId(id: number): Observable<ToDoItem[]> {
+  //   return this.httpClient.get<ToDoItem[]>("http://localhost:3000/items/?listId=" + id);
+  // }
+
   getToDoItemsBylistId(id: number): Observable<ToDoItem[]> {
-    return this.httpClient.get<ToDoItem[]>("http://localhost:3000/items/?listId=" + id);
+    let hoogste = 1;
+    let laagste = 1;
+    let list = this.httpClient.get<ToDoItem[]>("http://localhost:3000/items/?listId=" + id);
+
+    // for (let index:number in list){
+    //   if (list[index].order )
+    // }
+
+    return list;
   }
 
   // getToDoItems(): ToDoItem[] {
