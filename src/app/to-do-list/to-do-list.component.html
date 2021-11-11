@@ -1,7 +1,13 @@
+<!-- <div class="col-sm-12 center category" > -->
 <div class="col-sm-12 col-md-4 col-lg-3 center category" >
   <!-- <h2>--- list category ---</h2> -->
   <h2>{{toDoList.name}}</h2>
+  <button type="button" class="btn btn-success addBtn" (click)="add()"><i class="fas fa-plus"></i> nieuwe lijst</button>
+  <button type="button" class="btn btn-success" (click)="edit(toDoList.id)"><i class="fas fa-edit"></i>edit</button>
+  <button type="button" class="btn btn-danger" (click)="delete(toDoList.id)"><i class="far fa-trash-alt"></i>delete</button>
+
   <!-- <p>{{toDoList}}</p> -->
+
   <app-to-do-item *ngFor="let toDoItem of (toDoItems$ | async)" [toDoItem]="toDoItem" ></app-to-do-item>
 </div>
 <!-- <table class="table" *ngIf="categories && categories.length > 0">

@@ -3,19 +3,43 @@
     {
       "id": 1,
       "name": "category-1",
-      "color": "pink",
+      "color": "rood",
       "textcolor": "#000000"
     },
     {
       "id": 2,
       "name": "category-2",
-      "color": "purple",
+      "color": "oranje",
       "textcolor": "#000000"
     },
     {
       "id": 3,
       "name": "category-3",
-      "color": "blue",
+      "color": "geel",
+      "textcolor": "#000000"
+    },
+    {
+      "id": 4,
+      "name": "category-4",
+      "color": "groen",
+      "textcolor": "#000000"
+    },
+    {
+      "id": 5,
+      "name": "category-5",
+      "color": "blauw",
+      "textcolor": "#000000"
+    },
+    {
+      "id": 6,
+      "name": "category-6",
+      "color": "indigo",
+      "textcolor": "#000000"
+    },
+    {
+      "id": 7,
+      "name": "category-7",
+      "color": "violet",
       "textcolor": "#000000"
     }
   ],
