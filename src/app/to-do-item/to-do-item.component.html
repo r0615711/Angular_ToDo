@@ -14,7 +14,7 @@
   </div>
   </div>
   <div class="card-body">
-    <h5 class="card-title text-right">Due to: {{toDoItem.date}}</h5>
+    <h5 class="card-title text-right">Due to: {{toDoItem.date| date:'shortDate'}}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{toDoItem.order}}</h6>
     <p class="card-text">{{toDoItem.description}}</p>
     <!-- <a href="#" class="card-link">Card link</a>
