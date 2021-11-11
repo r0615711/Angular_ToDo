@@ -6,6 +6,8 @@ import { ToDoListService } from '../to-do-list.service';
 
 import { Observable, Subscription } from 'rxjs';
 
+import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-to-do-list',
   templateUrl: './to-do-list.component.html',
@@ -29,10 +31,10 @@ export class ToDoListComponent implements OnInit, OnDestroy {
   deleteToDoList$: Subscription = new Subscription();
 
   errorMessage: string = '';
-  router: any;
+  // router: any;
   deleteCategorie$: any;
 
-  constructor(private toDoItemService: ToDoItemService, private toDoListService: ToDoListService) { }
+  constructor(private toDoItemService: ToDoItemService, private toDoListService: ToDoListService, private router: Router ) { }
 
 
   ngOnInit(): void {
@@ -48,6 +50,7 @@ export class ToDoListComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.toDoLists$.unsubscribe();
     this.deleteToDoList$.unsubscribe();
+    // this.router.navigate(['']);
   }
 
 

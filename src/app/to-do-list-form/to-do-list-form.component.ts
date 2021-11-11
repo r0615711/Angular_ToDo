@@ -54,7 +54,7 @@ export class ToDoListFormComponent implements OnInit, OnDestroy {
     if (this.isAdd) {
       this.postToDoList$ = this.toDoListService.postToDoLists(this.toDoList).subscribe(result => {
                 //all went well
-                this.router.navigateByUrl("itemlist/form");
+                this.router.navigateByUrl("");
               },
               error => {
                 this.errorMessage = error.message;
@@ -63,7 +63,7 @@ export class ToDoListFormComponent implements OnInit, OnDestroy {
     if (this.isEdit) {
       this.putToDoList$ = this.toDoListService.putToDoLists(this.toDoListId, this.toDoList).subscribe(result => {
                 //all went well
-                this.router.navigateByUrl("itemlist/form");
+                this.router.navigateByUrl("");
               },
               error => {
                 this.errorMessage = error.message;
