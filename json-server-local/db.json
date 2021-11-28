@@ -2,64 +2,40 @@
   "lists": [
     {
       "id": 1,
-      "name": "category-1",
+      "name": "Angular",
       "color": "rood",
       "textcolor": "#000000"
     },
     {
       "id": 2,
-      "name": "category-2",
+      "name": "React",
       "color": "oranje",
       "textcolor": "#000000"
     },
     {
       "id": 3,
-      "name": "category-3",
-      "color": "geel",
-      "textcolor": "#000000"
-    },
-    {
-      "id": 4,
-      "name": "category-4",
-      "color": "groen",
-      "textcolor": "#000000"
-    },
-    {
-      "id": 5,
-      "name": "category-5",
+      "name": "Artificial Intelligence",
       "color": "blauw",
       "textcolor": "#000000"
-    },
-    {
-      "id": 6,
-      "name": "category-6",
-      "color": "indigo",
-      "textcolor": "#000000"
-    },
-    {
-      "id": 7,
-      "name": "category-7",
-      "color": "violet",
-      "textcolor": ""
     }
   ],
   "items": [
     {
       "id": 1,
       "listId": 1,
-      "title": "Cisco assignment",
-      "description": "Chapter test 2",
-      "date": "2021-12-02",
-      "status": "done",
+      "title": "ToDo-app",
+      "description": "Instructievideo maken",
+      "date": "2021-11-28",
+      "status": "todo",
       "statusId": 2,
       "order": 1
     },
     {
       "id": 2,
       "listId": 2,
-      "title": "Mobile Development",
-      "description": "Deadline to upload project description and team",
-      "date": "2021-11-12",
+      "title": "React oefening 3",
+      "description": "Maak oefening 3 over components",
+      "date": "2021-11-29",
       "status": "todo",
       "statusId": 1,
       "order": 1
@@ -67,9 +43,9 @@
     {
       "id": 3,
       "listId": 3,
-      "title": "Mobile Development",
-      "description": "Deadline to upload project description and team",
-      "date": "2021-11-12",
+      "title": "Taak 3: neural networks",
+      "description": "Maak een webscraper voor het samenstellen van een dataset.",
+      "date": "2021-12-05",
       "status": "todo",
       "statusId": 1,
       "order": 1
@@ -77,32 +53,22 @@
     {
       "id": 4,
       "listId": 1,
-      "title": "Cleaning",
-      "description": "The windows",
-      "date": "2022-01-27",
-      "status": "todo",
+      "title": "ToDo-app CRUD",
+      "description": "maak een create, read, edit en delete voor een lijst en een item",
+      "date": "2021-11-14",
+      "status": "done",
       "statusId": 1,
       "order": 2
     },
     {
       "id": 5,
-      "listId": 2,
-      "title": "Cleaning",
-      "description": "cleaning",
-      "date": "2021-11-16",
+      "listId": "1",
+      "title": "test",
+      "description": "test",
+      "date": "2021-11-29",
       "status": "todo",
-      "statusId": 1,
-      "order": 2
-    },
-    {
-      "id": 6,
-      "listId": 2,
-      "title": "Cleaning",
-      "description": "The windows",
-      "date": "2021-11-15",
-      "status": "todo",
-      "statusId": 1,
-      "order": 1
+      "statusId": 0,
+      "order": 0
     }
   ],
   "statuses": [
