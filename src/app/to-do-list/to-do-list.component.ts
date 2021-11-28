@@ -54,9 +54,14 @@ export class ToDoListComponent implements OnInit, OnDestroy {
   }
 
 
-  add() {
+  addList() {
     //Navigate to form in add mode
     this.router.navigate(['itemlist/form'], {state: {mode: 'add'}});
+  }
+
+  addItem() {
+    //Navigate to form in add mode
+    this.router.navigate(['item/form'], {state: {mode: 'add'}});
   }
 
   edit(id: number) {

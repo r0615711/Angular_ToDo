@@ -1,6 +1,8 @@
+<div class="container pb-2">
 <div class="alert alert-danger" role="alert" *ngIf="isSubmitted && errorMessage">
   {{errorMessage}}
 </div>
+<h1>Maak een nieuwe lijst</h1>
 <form (ngSubmit)="onSubmit()" #categoryForm="ngForm">
   <div class="form-group">
     <label for="name">Name</label>
@@ -11,7 +13,7 @@
     <!-- <input type="text" class="form-control" id="color" name="color" placeholder="color" [(ngModel)]="toDoList.color"
            #color="ngModel" required> -->
 
-
+           <label for="color">Kies een kleur</label>
            <select class="form-control" id="color" name="color" placeholder="kies een kleur" [(ngModel)]="toDoList.color"
            #color="ngModel" required>
 
@@ -30,3 +32,4 @@
   <button type="submit" class="btn btn-primary" *ngIf="isAdd" [disabled]="!categoryForm.form.valid || isSubmitted">Add</button>
   <button type="submit" class="btn btn-primary" *ngIf="isEdit" [disabled]="!categoryForm.form.valid || isSubmitted">Save</button>
 </form>
+</div>

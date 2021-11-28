@@ -1,6 +1,9 @@
 
 <h1>Welcome To ToDo</h1>
 <!-- <app-to-do-item *ngFor="let toDoItem of toDoItems" [toDoItem]="toDoItem" ></app-to-do-item> -->
+
+<button type="button" class="btn btn-success addBtn" (click)="add()"><i class="fas fa-plus"></i> nieuwe lijst</button>
+<button type="button" class="btn btn-success addBtn" (click)="addItem()"><i class="fas fa-plus"></i>nieuw item</button>
 <div class="d-flex justify-content-center">
 <div class="row d-flex flex-wrap">
 <app-to-do-list *ngFor="let toDoList of (toDoLists$ | async)" [toDoList]="toDoList" class="category {{toDoList.color}}"></app-to-do-list>
