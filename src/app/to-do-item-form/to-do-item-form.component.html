@@ -1,0 +1,66 @@
+<div class="container pb-2">
+<div class="alert alert-danger" role="alert" *ngIf="isSubmitted && errorMessage">
+  {{errorMessage}}
+</div>
+<h1>Maak een nieuw todo-item</h1>
+<form (ngSubmit)="onSubmit()" #categoryForm="ngForm">
+  <div class="form-group">
+
+
+    <label for="titel">Titel</label>
+    <input type="text" class="form-control" id="titel" name="titel" placeholder="titel"  [(ngModel)]="item.title"
+           #titel="ngModel" required >
+    <div [hidden]="titel.valid || titel.pristine" class="alert alert-danger">Titel is required</div>
+
+    <label for="beschrijving">Beschrijving</label>
+    <input type="textarea" class="form-control" id="beschrijving" name="beschrijving" placeholder="beschrijving" [(ngModel)]="item.description"
+           #beschrijving="ngModel" required>
+    <div [hidden]="beschrijving.valid || beschrijving.pristine" class="alert alert-danger">Beschrijving is required</div>
+
+
+    <label for="datum">Datum</label>
+    <input type="date" class="form-control" id="datum" name="datum" placeholder="datum" [(ngModel)]="item.date"
+           #datum="ngModel" required>
+    <div [hidden]="datum.valid || datum.pristine" class="alert alert-danger">Datum is required</div>
+
+    <!-- <label for="status">Status</label>
+    <select class="form-control" id="status" name="status" placeholder="status" [(ngModel)]="item.status"
+    #status="ngModel" hidden>
+     <option value="status" selected="selected">todo</option>
+   </select> -->
+<!--
+   <textarea class="form-control" id="status" name="status" placeholder="status" [(ngModel)]="item.status"
+           #status="ngModel" value="todo" placeholder="todo" > todo </textarea> -->
+
+           <label for="status">Status</label>
+   <select class="form-control" id="status" name="status" placeholder="status" [(ngModel)]="item.status"
+   #color="ngModel">
+    <option value="todo" selected="selected">todo</option>
+    <option value="done" *ngIf="isEdit">done</option>
+  </select>
+
+
+   <!-- <input type="number" class="form-control" id="listId" name="listId" placeholder="listId" [(ngModel)]="item.listId"
+   #datum="ngModel" required  value=""> -->
+
+   <label for="list">Todo-lijst</label>
+   <select class="form-control" id="list" name="list" placeholder="list" [(ngModel)]="item.listId"
+   #color="ngModel" >
+
+    <option *ngFor="let toDoList of (toDoLists$ | async)" value="{{toDoList.id}}">{{toDoList.name}}</option>
+    <!-- <option value="done">done</option> -->
+
+<!--
+    <option value="done">done</option> -->
+  </select>
+</div>
+
+<!-- <div [hidden]="datum.valid || datum.pristine" class="alert alert-danger">Datum is required</div> -->
+
+
+
+  <button type="submit" class="btn btn-primary" *ngIf="isAdd" [disabled]="!categoryForm.form.valid || isSubmitted">Add</button>
+  <button type="submit" class="btn btn-primary" *ngIf="isEdit" [disabled]="!categoryForm.form.valid || isSubmitted">Save</button>
+</form>
+
+</div>

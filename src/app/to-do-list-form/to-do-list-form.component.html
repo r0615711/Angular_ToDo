@@ -1,13 +1,35 @@
+<div class="container pb-2">
 <div class="alert alert-danger" role="alert" *ngIf="isSubmitted && errorMessage">
   {{errorMessage}}
 </div>
+<h1>Maak een nieuwe lijst</h1>
 <form (ngSubmit)="onSubmit()" #categoryForm="ngForm">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="toDoList.name"
            #name="ngModel" required>
-    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Name is required</div>
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Titel is required</div>
+
+    <!-- <input type="text" class="form-control" id="color" name="color" placeholder="color" [(ngModel)]="toDoList.color"
+           #color="ngModel" required> -->
+
+           <label for="color">Kies een kleur</label>
+           <select class="form-control" id="color" name="color" placeholder="kies een kleur" [(ngModel)]="toDoList.color"
+           #color="ngModel" required>
+
+            <option value="rood">rood</option>
+            <option value="oranje">oranje</option>
+            <option value="geel">geel</option>
+            <option value="groen">groen</option>
+            <option value="blauw">blauw</option>
+            <option value="indigo">indigo</option>
+            <option value="violet">violet</option>
+          </select>
+
+    <div [hidden]="color.valid || color.pristine" class="alert alert-danger">Kleur is required</div>
+
   </div>
   <button type="submit" class="btn btn-primary" *ngIf="isAdd" [disabled]="!categoryForm.form.valid || isSubmitted">Add</button>
   <button type="submit" class="btn btn-primary" *ngIf="isEdit" [disabled]="!categoryForm.form.valid || isSubmitted">Save</button>
 </form>
+</div>

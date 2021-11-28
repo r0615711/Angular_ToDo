@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ToDoItem } from './toDoItem';
 
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -13,6 +13,7 @@ export class ToDoItemService {
   }
 
   getToDoItems(): Observable<ToDoItem[]> {
+    // return this.httpClient.get<ToDoItem[]>("http://localhost:3000/items?_sort=date&_order=asc");
     return this.httpClient.get<ToDoItem[]>("http://localhost:3000/items");
   }
 
@@ -25,9 +26,8 @@ export class ToDoItemService {
   // }
 
   getToDoItemsBylistId(id: number): Observable<ToDoItem[]> {
-    let hoogste = 1;
-    let laagste = 1;
-    let list = this.httpClient.get<ToDoItem[]>("http://localhost:3000/items/?listId=" + id);
+
+    let list = this.httpClient.get<ToDoItem[]>("http://localhost:3000/items/?listId=" + id +"&_sort=date&_order=asc");
 
     // for (let index:number in list){
     //   if (list[index].order )
@@ -35,6 +35,33 @@ export class ToDoItemService {
 
     return list;
   }
+
+  postCategory(item: ToDoItem): Observable<ToDoItem> {
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+
+    return this.httpClient.post<ToDoItem>("http://localhost:3000/items", item, {headers: headers});
+}
+
+putCategory(id:number, item: ToDoItem): Observable<ToDoItem> {
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+
+    return this.httpClient.put<ToDoItem>("http://localhost:3000/items/" + id, item, {headers: headers});
+}
+
+deleteCategory(id: number): Observable<ToDoItem> {
+    return this.httpClient.delete<ToDoItem>("http://localhost:3000/items/" + id);
+}
+
+
+
+
+
+
+
+
+
 
   // getToDoItems(): ToDoItem[] {
   //   let toDoItems: ToDoItem[] = [];

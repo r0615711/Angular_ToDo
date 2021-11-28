@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { ToDoListFormComponent } from './to-do-list-form/to-do-list-form.component';
+import { ToDoItemFormComponent } from './to-do-item-form/to-do-item-form.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ToDoListFormComponent } from './to-do-list-form/to-do-list-form.compone
     MenuComponent,
     ToDoListComponent,
     ToDoListFormComponent,
+    ToDoItemFormComponent,
   ],
   imports: [
     BrowserModule,

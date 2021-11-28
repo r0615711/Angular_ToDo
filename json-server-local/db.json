@@ -40,7 +40,7 @@
       "id": 7,
       "name": "category-7",
       "color": "violet",
-      "textcolor": "#000000"
+      "textcolor": ""
     }
   ],
   "items": [
@@ -49,7 +49,7 @@
       "listId": 1,
       "title": "Cisco assignment",
       "description": "Chapter test 2",
-      "date": "2021-10-30T22:00:00.000Z",
+      "date": "2021-12-02",
       "status": "done",
       "statusId": 2,
       "order": 1
@@ -57,19 +57,19 @@
     {
       "id": 2,
       "listId": 2,
-      "title": "Cleaning",
-      "description": "The windows need some cleaning",
-      "date": "2021-10-26T22:00:00.000Z",
+      "title": "Mobile Development",
+      "description": "Deadline to upload project description and team",
+      "date": "2021-11-12",
       "status": "todo",
       "statusId": 1,
-      "order": 3
+      "order": 1
     },
     {
       "id": 3,
       "listId": 3,
       "title": "Mobile Development",
       "description": "Deadline to upload project description and team",
-      "date": "2021-10-24T22:00:00.000Z",
+      "date": "2021-11-12",
       "status": "todo",
       "statusId": 1,
       "order": 1
@@ -79,7 +79,7 @@
       "listId": 1,
       "title": "Cleaning",
       "description": "The windows",
-      "date": "2021-10-26T22:00:00.000Z",
+      "date": "2022-01-27",
       "status": "todo",
       "statusId": 1,
       "order": 2
@@ -89,7 +89,7 @@
       "listId": 2,
       "title": "Cleaning",
       "description": "cleaning",
-      "date": "2021-10-26T22:00:00.000Z",
+      "date": "2021-11-16",
       "status": "todo",
       "statusId": 1,
       "order": 2
@@ -99,7 +99,7 @@
       "listId": 2,
       "title": "Cleaning",
       "description": "The windows",
-      "date": "2021-10-26T22:00:00.000Z",
+      "date": "2021-11-15",
       "status": "todo",
       "statusId": 1,
       "order": 1
