@@ -1,23 +1,9 @@
 <div class="card mb-2 " *ngIf="toDoItem">
 
-  <!-- <div class="card mb-2"  *ngIf="toDoItem"> -->
+
   <div class="card-header  {{toDoItem.status}}">
     <div class="row">
     <p class="col-10">Status: {{toDoItem.status}}</p>
-
-    <!-- <div *ngIf="toDoItem.statusId  == 2" class="col-1">
-      <input type="checkbox" name="done" id="done" checked>
-    </div>
-    <div *ngIf="toDoItem.statusId  == 1" class="col-1">
-      <input type="checkbox" name="done" id="done">
-    </div> -->
-
-    <!-- <div *ngIf="toDoItem.status  == 'done'" class="col-1">
-      <input type="checkbox" name="done" id="done" checked>
-    </div>
-    <div *ngIf="toDoItem.status  == 'todo'" class="col-1">
-      <input type="checkbox" name="done" id="done">
-    </div> -->
 
  <button type="button" class="btn btn-success col-6" (click)="edit(toDoItem.id)"><i class="fas fa-edit"></i> edit</button>
       <button type="button" class="btn btn-danger col-6" (click)="delete(toDoItem.id)"><i class="far fa-trash-alt"></i> delete</button>
@@ -27,9 +13,8 @@
   </div>
   <div class="card-body">
     <h5 class="card-title text-right">Deadline: {{toDoItem.date| date:'shortDate'}}</h5>
-    <!-- <h6 class="card-subtitle mb-2 text-muted">{{toDoItem.order}}</h6> -->
+
     <p class="card-text">{{toDoItem.description}}</p>
-    <!-- <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a> -->
+
   </div>
 </div>
