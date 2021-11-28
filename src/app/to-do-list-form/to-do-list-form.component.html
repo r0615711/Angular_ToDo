@@ -9,10 +9,6 @@
     <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="toDoList.name"
            #name="ngModel" required>
     <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Titel is required</div>
-
-    <!-- <input type="text" class="form-control" id="color" name="color" placeholder="color" [(ngModel)]="toDoList.color"
-           #color="ngModel" required> -->
-
            <label for="color">Kies een kleur</label>
            <select class="form-control" id="color" name="color" placeholder="kies een kleur" [(ngModel)]="toDoList.color"
            #color="ngModel" required>

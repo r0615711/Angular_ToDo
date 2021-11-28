@@ -23,16 +23,7 @@
            #datum="ngModel" required>
     <div [hidden]="datum.valid || datum.pristine" class="alert alert-danger">Datum is required</div>
 
-    <!-- <label for="status">Status</label>
-    <select class="form-control" id="status" name="status" placeholder="status" [(ngModel)]="item.status"
-    #status="ngModel" hidden>
-     <option value="status" selected="selected">todo</option>
-   </select> -->
-<!--
-   <textarea class="form-control" id="status" name="status" placeholder="status" [(ngModel)]="item.status"
-           #status="ngModel" value="todo" placeholder="todo" > todo </textarea> -->
-
-           <label for="status">Status</label>
+    <label for="status">Status</label>
    <select class="form-control" id="status" name="status" placeholder="status" [(ngModel)]="item.status"
    #color="ngModel">
     <option value="todo" selected="selected">todo</option>
@@ -40,22 +31,15 @@
   </select>
 
 
-   <!-- <input type="number" class="form-control" id="listId" name="listId" placeholder="listId" [(ngModel)]="item.listId"
-   #datum="ngModel" required  value=""> -->
-
    <label for="list">Todo-lijst</label>
    <select class="form-control" id="list" name="list" placeholder="list" [(ngModel)]="item.listId"
    #color="ngModel" >
 
     <option *ngFor="let toDoList of (toDoLists$ | async)" value="{{toDoList.id}}">{{toDoList.name}}</option>
-    <!-- <option value="done">done</option> -->
 
-<!--
-    <option value="done">done</option> -->
   </select>
 </div>
 
-<!-- <div [hidden]="datum.valid || datum.pristine" class="alert alert-danger">Datum is required</div> -->
 
 
 

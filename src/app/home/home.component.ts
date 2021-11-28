@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
     this.toDoLists$ = this.toDoListService.getToDoLists();
-    // this.toDoItems$ = this.toDoItemService.getToDoItemsBylistId(1);
   }
 
   add() {

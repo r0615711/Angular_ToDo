@@ -31,26 +31,19 @@ export class ToDoListComponent implements OnInit, OnDestroy {
   deleteToDoList$: Subscription = new Subscription();
 
   errorMessage: string = '';
-  // router: any;
   deleteCategorie$: any;
 
   constructor(private toDoItemService: ToDoItemService, private toDoListService: ToDoListService, private router: Router ) { }
 
 
   ngOnInit(): void {
-    // this.toDoItems$ = this.toDoItemService.getToDoItems();
-    // this.toDoItems$ = this.toDoItemService.getToDoItemsBylistId(3);
     this.toDoItems$ = this.toDoItemService.getToDoItemsBylistId(this.toDoList.id);
-    // this.toDoItemService.getToDoItems().subscribe(result => this.article = result);
     this.itemColor = this.toDoList.color;
-
-    // this.toDoLists = this.toDoListService.getToDoLists();
   }
 
   ngOnDestroy(): void {
     this.toDoLists$.unsubscribe();
     this.deleteToDoList$.unsubscribe();
-    // this.router.navigate(['']);
   }
 
 
